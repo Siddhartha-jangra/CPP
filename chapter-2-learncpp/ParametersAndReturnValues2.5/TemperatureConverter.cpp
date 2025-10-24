@@ -18,14 +18,14 @@ double getValueFromUser()
     return temp;
 }
 
-double celsiusToFarhenhiet(int temp) 
+double celsiusToFarhenhiet(double temp) 
 {
-    return (temp - 32.0)*5.0/9.0;
+    return (9.0/5.0)*temp+32.0;
 }
 
-double farhenheitToCelsius(int temp) // can use the same identifier because the variable is localized.
+double farhenheitToCelsius(double temp) // can use the same identifier because the variable is localized.
 {
-    return 9.0*temp/5.0+32.0;
+    return (temp - 32.0)*5.0/9.0 ;
 }
 
 int main()

@@ -66,8 +66,7 @@ long double divide()  // division
     long double num1; 
     num1 = getFirstValue();
 
-    long double num2;
-    num2 { getSecondValue() };
+    long double num2 { getSecondValue() };
 
     long double divide;
     divide = num1/num2;
