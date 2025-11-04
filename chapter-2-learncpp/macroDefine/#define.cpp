@@ -9,7 +9,7 @@ void dosomething(){
 
 int main()
 {
-    std::cout << MY_NAME << '\n'; //the defone is substituted with the text
+    std::cout << MY_NAME << '\n'; //the define is substituted with the text
 
 
     //  here #if works the same way as if statements
