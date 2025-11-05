@@ -1,14 +1,10 @@
+#include <cstdint> // for fixed-width integers
 #include <iostream>
 
-int add(void)
+int main()
 {
-    std::cout << "klasdjfh";
-    return 0;
-}
+    std::int8_t x { 65 };   // initialize 8-bit integral type with value 65
+    std::cout << x << '\n'; // You're probably expecting this to print 65
 
-int main() 
-{
-    add();
     return 0;
-    
 }
