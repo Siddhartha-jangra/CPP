@@ -2,21 +2,25 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build and Run C++ (Git Bash)",
+      "label": "Build C++ (g++)",
       "type": "shell",
-      "command": "bash",
+      "command": "g++",
       "args": [
-        "-c",
-        "cd \"${fileDirname}\" && g++ \"${file}\" -o \"${fileBasenameNoExtension}.exe\" && ./\"${fileBasenameNoExtension}.exe\""
+        "-g",
+        "${fileBasename}", // This becomes just "fixed-width-int.cpp"
+        "-o",
+        "${fileBasenameNoExtension}.exe" // This becomes just "fixed-width-int.exe"
       ],
       "options": {
-        "cwd": "${fileDirname}"
+        "cwd": "${fileDirname}" // <-- This is the most important line
       },
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": [
+        "$gcc"
+      ]
     }
   ]
 }

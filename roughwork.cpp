@@ -1,10 +1,15 @@
-#include <cstdint> // for fixed-width integers
 #include <iostream>
+
+int printNumber()
+{
+    std::cout << "enter the number: " << '\n' ;
+    int a;
+    std::cin >> a;
+    return a;
+}
 
 int main()
 {
-    std::int8_t x { 65 };   // initialize 8-bit integral type with value 65
-    std::cout << x << '\n'; // You're probably expecting this to print 65
-
+    std::cout << printNumber();
     return 0;
 }
