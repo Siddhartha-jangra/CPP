@@ -5,7 +5,7 @@ const double gravity {9.8};
 # define MY_NAME "siddhartha"; 
 
 void Foo(const int a){
-     a = 5;
+    // a = 5;// will show error
     std::cout << a;
 }
 
@@ -17,7 +17,8 @@ const int Goo(int a )
 int main()
 {
     Foo(6);
-    std::cout << Goo(9);
+    int y {Goo(9)};
+    std::cout << y;
 
     return 0;
 
