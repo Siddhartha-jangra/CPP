@@ -34,12 +34,12 @@ int main()
 
 void reverse(int array[], int n)
 {   
-
-        for(int i{}; i < n/2; i++){
-            int temp = array[i];
-            array[i] = array[n-i-1];
-            array[n-i-1] = temp;
-        }
+// the loop runs only half way
+    for(int i{}; i < n/2; i++){
+        int temp = array[i];
+        array[i] = array[n-i-1];
+        array[n-i-1] = temp;
+    }
 
 }
 

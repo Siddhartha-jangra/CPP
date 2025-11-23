@@ -8,17 +8,13 @@ int main()
 
     // to put the user input data into the array.
     for(int i{0}; i < 5; i++){
-    
         std::cin >> array[i];
     }
 
     //to print the array.
     for(int i{0}; i < 5; i++){
-
         std::cout << array[i] << '\n';
     }
-    
-        
 
     return 0;
 }
