@@ -27,6 +27,13 @@ int main()
     vec.push_back(10);
     std::cout << vec.size() << '\n';
     std::cout << vec.capacity() << '\n';    
+
+    //emplace_back prints the values we add and also stores the value into the 
+    //vector like push_back. however it doesn't create an outside variable to store the 
+    //variable like pusf_back and is more effecient.
+    std::cout << vec.emplace_back(5) << '\n'; 
+    std::cout << vec.size() << '\n';
+    std::cout << vec.capacity() << '\n';       
    
 
     return 0;

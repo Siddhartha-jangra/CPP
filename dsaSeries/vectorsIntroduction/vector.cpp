@@ -1,6 +1,6 @@
 /*the vectors are just like the normal array but with 
 dynamic memory allocation.
-they are a part of stl, */
+they are a part of STL, */
 
 #include <iostream>
 #include <vector> // std library for the vectors
@@ -14,8 +14,8 @@ int main()
     //the loop we run for the vector is called for each loop:-
     for(int i : vec2)
     {
-        std::cout << i << std::endl; // the i this time doesn't store the index but the value in the index itself
+        // the i this time doesn't store the index but the value in the index itself
+        std::cout << i << std::endl;
     }
-
     return 0;
 }
