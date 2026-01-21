@@ -13,26 +13,33 @@
 int main()
 {
     std::vector<int> vec {1,2,3,4,5};
-
+    //to check the size 
     std::cout << vec.size() << '\n';
 
-
+    //for each loop
     for(int i : vec)
     {
         std::cout << i << '\n';
     }
 
+    //to put value in the back
     vec.push_back(6);
     for(int i : vec)
     {
         std::cout << i << '\n';
     }
 
+    //prints the valuse in the front
     std::cout << vec.front() << '\n';
 
+    //print the value iof the end
     std::cout << vec.back() << '\n';
 
+    //goes at the location mentioned.
     std::cout << vec.at(3) << '\n';
+
+
+    
 
     return 0;
     
