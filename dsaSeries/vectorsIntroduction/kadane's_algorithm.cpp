@@ -42,7 +42,7 @@ int kadane(vector<int>& vec){
     int cSum {};
     int mSum {INT_MIN};
     for(int i {}; i<vec.size();i++){
-        cSum = vec[i];
+        cSum += vec[i];
         mSum = max(cSum, mSum);
         if(cSum < 0){
             cSum = 0;

@@ -7,11 +7,11 @@ the smaller and larger term using a loop.*/
 
 int main()
 {
-    //std::cout << "enter the number of datas put in array: \n";
-    //int num{};
-    //std::cin >> num;
+    std::cout << "enter the number of datas put in array: \n";
+    int num{};
+    std::cin >> num;
    
-    //int array[num]; this will not work because array is a compile time property 
+    int array[num];// this will not work because array is a compile time property 
     //                 the values is put at runtime. std::vector is for runtime array.
 
 
